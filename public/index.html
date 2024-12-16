@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Juegos</h1>
+  </header>
+
+  <main>
+    <!-- Formulario para agregar un nuevo juego -->
+    <section id="add-juego">
+      <h2>Añadir un nuevo juego</h2>
+      <form id="formAddJuego">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="desarrolladora" placeholder="Desarrolladora" required>
+        <input type="text" id="fechaLanzamiento" placeholder="Fecha de Lanzamiento" required>
+        <input type="text" id="plataformas" placeholder="Plataformas (separadas por coma)" required>
+        <button type="submit">Añadir Juego</button>
+      </form>
+    </section>
+
+    <!-- Lista de juegos -->
+    <section id="lista-juegos">
+      <h2>Lista de Juegos</h2>
+      <ul id="juegos-lista">
+        <!-- Los juegos serán cargados aquí dinámicamente -->
+      </ul>
+    </section>
+
+    <!-- Formulario para actualizar un juego -->
+    <section id="update-juego">
+      <h2>Actualizar juego</h2>
+      <form id="formUpdateJuego">
+        <input type="text" id="tituloActual" placeholder="Título actual" required>
+        <input type="text" id="tituloNuevo" placeholder="Nuevo Título" required>
+        <input type="text" id="desarrolladoraNueva" placeholder="Nueva Desarrolladora" required>
+        <input type="text" id="fechaLanzamientoNueva" placeholder="Nueva Fecha de Lanzamiento" required>
+        <input type="text" id="plataformasNuevas" placeholder="Nuevas Plataformas" required>
+        <button type="submit">Actualizar Juego</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
